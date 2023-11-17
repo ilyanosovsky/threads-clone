@@ -24,7 +24,7 @@ const app = express();
 
 app.use(cors(
 	{
-		origin: "https://threads-clone-five-lac.vercel.app/",
+		origin: "https://threads-clone-five-lac.vercel.app",
 		methods: ["POST", "GET", "PUT", "PATCH", "DELETE"],
 		credentials: true
 	}
