@@ -33,7 +33,7 @@ const HomePage = () => {
 
         // Track page view
         mixpanel.track('Page View', {
-            'Page Path': '/home',
+            'Page Path': '/',
         });
 
 

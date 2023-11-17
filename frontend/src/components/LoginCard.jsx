@@ -124,11 +124,6 @@ export default function LoginCard() {
 									Sign up
 								</Link>
 							</Text>
-							<Text align={"center"}>
-								<Link href="/welcome">
-									Go back to Welcome
-								</Link>
-							</Text>
 						</Stack>
 					</Stack>
 				</Box>

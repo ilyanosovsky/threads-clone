@@ -24,8 +24,6 @@ const Header = () => {
     const [notifications, setNotifications] = useState([]);
     const [notificationCount, setNotificationCount] = useState(0);
 
-	const showOnlyToggle = ["/", "/welcome"].includes(location.pathname);
-
     // Fetch notifications
     useEffect(() => {
         const fetchNotifications = async () => {
@@ -76,38 +74,9 @@ const Header = () => {
     
 	return (
         <Flex justifyContent={"space-between"} mt={6} mb='12'>
-            {showOnlyToggle ? (
-				<>	
-					<Image
-						cursor={"pointer"}
-						alt='logo'
-						w={6}
-						src={colorMode === "dark" ? "/light-logo.svg" : "/dark-logo.svg"}
-						onClick={toggleColorMode}
-					/>
-
-					<Image
-						cursor={"pointer"}
-						alt='logo'
-						w={6}
-						src={colorMode === "dark" ? "/light-logo.svg" : "/dark-logo.svg"}
-						onClick={toggleColorMode}
-					/>
-
-					<Image
-						cursor={"pointer"}
-						alt='logo'
-						w={6}
-						src={colorMode === "dark" ? "/light-logo.svg" : "/dark-logo.svg"}
-						onClick={toggleColorMode}
-					/>
-				</>
-
-			
-            ) : (
                 <>
                     {user ? (
-                        <Link as={RouterLink} to='/home'>
+                        <Link as={RouterLink} to='/'>
                             <AiFillHome size={24} />
                         </Link>
                     ) : (
@@ -174,7 +143,6 @@ const Header = () => {
                         </DrawerContent>
                     </Drawer>
                 </>
-            )}
         </Flex>
 	);
 };

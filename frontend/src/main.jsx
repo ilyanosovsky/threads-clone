@@ -12,7 +12,7 @@ import { RecoilRoot } from "recoil";
 const styles = {
 	global: (props) => ({
 		body: {
-			color: mode("#FF00E5", "#59A5FF")(props),
+			color: mode("gray.800", "whiteAlpha.900")(props),
 			bg: mode("gray.100", "#101010")(props),
 		},
 	}),

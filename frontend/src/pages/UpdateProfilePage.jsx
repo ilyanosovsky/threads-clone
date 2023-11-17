@@ -142,17 +142,6 @@ export default function UpdateProfilePage() {
 					</FormControl>
 					<Stack spacing={6} direction={["column", "row"]}>
 
-						{/* <Button
-							bg={"red.400"}
-							color={"white"}
-							w='full'
-							_hover={{
-								bg: "red.500",
-							}}
-						>
-							Cancel
-						</Button> */}
-
 						<Button
 							bg={"green.400"}
 							color={"white"}

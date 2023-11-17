@@ -75,7 +75,7 @@ const UserPage = () => {
             <Tabs index={tabIndex} onChange={handleTabChange} isFitted>
                 <TabList>
                     <Tab>Your Feed</Tab>
-                    <Tab>Your Media</Tab>
+                    <Tab>Your Gallery</Tab>
                 </TabList>
 
                 <TabPanels>
