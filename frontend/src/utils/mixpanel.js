@@ -1,6 +1,6 @@
 // src/utils/mixpanel.js
 import mixpanel from 'mixpanel-browser';
 
-mixpanel.init('65f712f0fe63aa1068e45df204fb5298');
+mixpanel.init('642a51b73551ebf4183d6bf3b61cc444');
 
 export default mixpanel;
