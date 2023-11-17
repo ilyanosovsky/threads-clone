@@ -9,8 +9,6 @@ import { useRecoilValue } from "recoil";
 import userAtom from "./atoms/userAtom";
 import UpdateProfilePage from "./pages/UpdateProfilePage";
 import CreatePost from "./components/CreatePost";
-// import WelcomePage from "./pages/WelcomePage";
-// import ZeroPage from "./pages/ZeroPage";
 
 function App() {
 	const user = useRecoilValue(userAtom);
@@ -20,8 +18,6 @@ function App() {
 			<Container maxW={pathname === "/" ? { base: "620px", md: "900px" } : "620px"}>
 				<Header />
 				<Routes>
-					{/* <Route path="/" element={ <ZeroPage /> } />
-					<Route path="/welcome" element={ <WelcomePage /> } /> */}
 					<Route path='/' element={user ? <HomePage /> : <Navigate to='/auth' />} />
 					<Route path='/auth' element={!user ? <AuthPage /> : <Navigate to='/' />} />
 					<Route path='/update' element={user ? <UpdateProfilePage /> : <Navigate to='/auth' />} />

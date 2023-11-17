@@ -24,7 +24,7 @@ const app = express();
 
 app.use(cors(
 	{
-		origin: "https://bella-orion.vercel.app",
+		origin: "https://threads-clone-server.vercel.app/",
 		methods: ["POST", "GET", "PUT", "PATCH", "DELETE"],
 		credentials: true
 	}
