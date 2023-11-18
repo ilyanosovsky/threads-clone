@@ -1,4 +1,4 @@
-import { Box, Flex, Spinner, Skeleton, SkeletonCircle, SkeletonText } from "@chakra-ui/react";
+import { Flex, Box, Spinner, SkeletonCircle, SkeletonText, Text, Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import useShowToast from "../hooks/useShowToast";
 import Post from "../components/Post";
@@ -65,7 +65,28 @@ const HomePage = () => {
 	}, [showToast, setPosts, user]);
 
 	return (
-		<Flex gap='10' alignItems={"flex-start"}>
+        <Flex 
+            direction={{ base: "column", md: "row" }} // column for mobile, row for larger screens
+            gap="10" 
+            alignItems="flex-start"
+        >
+			{/* Suggested Users Accordion for Mobile */}
+			<Box display={{ base: "block", md: "none" }} w="full">
+                <Accordion defaultIndex={[0]} allowMultiple>
+                    <AccordionItem>
+                        <AccordionButton>
+                            <Box flex="1" textAlign="left">
+                                Users to Follow
+                            </Box>
+                            <AccordionIcon />
+                        </AccordionButton>
+                        <AccordionPanel pb={4}>
+                            <SuggestedUsers />
+                        </AccordionPanel>
+                    </AccordionItem>
+                </Accordion>
+            </Box>
+
 			<Box flex={70}>
 				{!loading && posts.length === 0 && <h1>Follow some users to see the feed</h1>}
 

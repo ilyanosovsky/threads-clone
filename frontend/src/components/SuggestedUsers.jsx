@@ -68,6 +68,9 @@ const SuggestedUsers = () => {
 							</Flex>
 						</Flex>
 					))}
+				{!loading && suggestedUsers.length === 0 && 
+                    <Text>No New Users left to follow.</Text>
+                }
 			</Flex>
 		</>
 	);
