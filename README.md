@@ -3,14 +3,30 @@
 ## Introduction
 Welcome to Threads Clone, a web-based social media network inspired by Threads. This project offers a rich set of features allowing users to engage in a vibrant social environment. Here's what you can do:
 
-![home](screenshots/home.png)
 ![user](screenshots/user.png)
 
-![post](screenshots/post.png)
-![reply](screenshots/reply.png)
+<table>
+  <tr>
+    <td align="center"><img src="screenshots/post.png" alt="Post" /></td>
+    <td align="center"><img src="screenshots/reply.png" alt="Reply" /></td>
+  </tr>
+  <tr>
+    <td align="center">Post</td>
+    <td align="center">Reply</td>
+  </tr>
+</table>
 
-![notification](screenshots/notification.png)
-![gallery](screenshots/gallery.png)
+<table>
+  <tr>
+    <td align="center"><img src="screenshots/notification.png" alt="Notification" /></td>
+    <td align="center"><img src="screenshots/gallery.png" alt="Gallery" /></td>
+  </tr>
+  <tr>
+    <td align="center">Notification</td>
+    <td align="center">Gallery</td>
+  </tr>
+</table>
+
 
 - **Create and Update User Profiles:** Sign up and personalize your profile. Keep it fresh by updating your information anytime.
 - **Follow/Unfollow Users:** Connect with others by following their profiles and, if needed, you can unfollow them too.
@@ -56,7 +72,7 @@ To get started with this project, follow these steps:
     ``` 
 ## Setting Up the .env File
 You'll need to set up your .env file with the necessary configurations. Here's a template to get you started:
-    ```env
+    ```bash
     # Backend .env configuration
     DB_URI=<your_mongodb_uri>
     JWT_SECRET=<your_jwt_secret>
