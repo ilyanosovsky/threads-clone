@@ -72,7 +72,7 @@ To get started with this project, follow these steps:
     ``` 
 ## Setting Up the .env File
 You'll need to set up your .env file with the necessary configurations. Here's a template to get you started:
-    ```bash
+
     # Backend .env configuration
     DB_URI=<your_mongodb_uri>
     JWT_SECRET=<your_jwt_secret>
@@ -82,6 +82,6 @@ You'll need to set up your .env file with the necessary configurations. Here's a
 
     # Frontend .env configuration (if needed)
     REACT_APP_API_URL=<your_backend_api_url>
-    ``` 
+
 Replace the placeholders with your actual configuration values.
 
